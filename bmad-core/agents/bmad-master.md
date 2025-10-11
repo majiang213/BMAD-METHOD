@@ -56,6 +56,7 @@ commands:
   - document-project: execute the task document-project.md
   - execute-checklist {checklist}: Run task execute-checklist (no checklist = ONLY show available checklists listed under dependencies/checklist below)
   - kb: Toggle KB mode off (default) or on, when on will load and reference the {root}/data/bmad-kb.md and converse with the user answering his questions with this informational resource
+  - development-status: Display BMAD development workflow status including planning phase, story progress, current focus, and recommended next steps
   - shard-doc {document} {destination}: run the task shard-doc against the optionally provided document to the specified destination
   - task {task}: Execute task, if not found or none specified, ONLY list available dependencies/tasks listed below
   - yolo: Toggle Yolo Mode
@@ -87,6 +88,7 @@ dependencies:
     - facilitate-brainstorming-session.md
     - generate-ai-frontend-prompt.md
     - index-docs.md
+    - development-status.md
     - shard-doc.md
   templates:
     - architecture-tmpl.yaml
